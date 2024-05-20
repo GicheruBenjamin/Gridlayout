@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body>*{
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: repeat(6, 100px);
+        }
+        header{
+            background-color: red;
+        }
+        main{
+            grid-row-start: 2;
+            grid-row-end: 5;
+            display: grid;
+            grid-template-columns: 10dvw auto;
+            grid-template-rows: repeat(2, 1fr);
+            #a{
+                background-color: brown;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            #b{
+                background-color: aqua;
+            }
+            aside{
+                background: chartreuse;
+            }
+        }
+        footer{
+            background-color: blue;
+        }
+    </style>
+    <title>ResponsivegridLayout</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section id="a"></section>
+        <aside></aside>
+        <section id="b"></section>
+    </main>
+    <footer></footer>
+</body>
+</html>
